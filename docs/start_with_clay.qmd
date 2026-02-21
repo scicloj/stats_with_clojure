@@ -1,7 +1,8 @@
 ---
 format:
-  html: {toc: true, toc-depth: 4, theme: cosmo}
-title: Noj v2 Getting Started
+  html: {toc: true, toc-depth: 4, theme: quarto}
+title: Stats with Clojure
+author: Scicloj Team
 
 ---
 <style></style><style>.printedClojure .sourceCode {
@@ -69,5 +70,5 @@ I jacked out and jacked in
 
 
 ```{=html}
-<div><pre><small><small>source: <a href="https://github.com/scicloj/noj-v2-getting-started/blob/main/notebooks/start_with_clay.clj">notebooks/start_with_clay.clj</a></small></small></pre></div>
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/start_with_clay.clj">notebooks/start_with_clay.clj</a></small></small></pre></div>
 ```

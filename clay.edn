@@ -1,3 +1,5 @@
-{:remote-repo {:git-url "https://github.com/scicloj/noj-v2-getting-started"
+{:remote-repo {:git-url "https://github.com/scicloj/stats_with_clojure"
                :branch "main"}
- :quarto {:title "Noj v2 Getting Started"}}
+ :quarto {:title "Stats with Clojure"
+          :author "Scicloj Team"
+          :format {:html {:theme "quarto"}}}}
