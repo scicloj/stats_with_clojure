@@ -14,7 +14,6 @@ author: Scicloj Team
 .clay-side-by-side {margin: 1em 0}
 </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
-
 # Index
 - About This Book
 
@@ -28,7 +27,7 @@ author: Scicloj Team
 ## Noj and other libraries
 - Noj
 - Kindly
-- Plotly
+- [Plotly](plotly.html)
 - Tablecloth
 
 ## Central Tendencies
@@ -46,7 +45,8 @@ author: Scicloj Team
 ## Books & References
 - [An Introduction to Statistical Learning](https://www.statlearning.com/) 
 - Khan Academy Probability & Statistics Course
-  
+- [Information Theory, Inference, and Learning Algorithms](https://www.inference.org.uk/itila/book.html)
+- [All of Statistics](https://www.stat.cmu.edu/~brian/valerie/617-2022/0%20-%20books/2004%20-%20wasserman%20-%20all%20of%20statistics.pdf)
 
 
 ```{=html}

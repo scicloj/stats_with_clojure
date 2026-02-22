@@ -11,7 +11,7 @@
 ## Noj and other libraries
 - Noj
 - Kindly
-- Plotly
+- [Plotly](plotly.html)
 - Tablecloth
 
 ## Central Tendencies
