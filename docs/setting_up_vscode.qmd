@@ -1,0 +1,42 @@
+---
+format:
+  html: {toc: true, toc-depth: 4, theme: quarto}
+title: Stats with Clojure
+author: Scicloj Team
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+# Setting up Visual Studio Code
+
+This book recommends using Visual Studio Code or its derivatives to use as the IDE to learn statistics with Clojure. One may download Visual Studio Code and install it following the instructions [here](https://code.visualstudio.com/download).
+
+Once downloaded, Please install the following plugins:
+
+- [Calva](https://marketplace.visualstudio.com/items?itemName=BetterThanTomorrow.calva)
+- [Calva Power Tools](https://marketplace.visualstudio.com/items?itemName=BetterThanTomorrow.calva-power-tools)
+
+Calva brings Clojure REPL to Visual Studio code. Calva Power Tools identifies you are opening a SciCloj project and jacks in your project.
+
+
+
+
+
+
+
+```{=html}
+<div style="background-color:grey;height:2px;width:100%;"></div>
+```
+
+
+
+```{=html}
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/setting_up_vscode.clj">notebooks/setting_up_vscode.clj</a></small></small></pre></div>
+```

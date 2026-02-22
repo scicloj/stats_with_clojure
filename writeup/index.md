@@ -3,7 +3,7 @@
 - [Statistics](statistics.html)
 
 ## Tooling
-- Setting up Visual Studio Code
+- [Setting up Visual Studio Code](setting_up_vscode.html)
 
 ## Getting your feet wet
 - Cloning Noj v2 Getting Started
