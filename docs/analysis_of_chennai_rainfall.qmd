@@ -1,0 +1,56 @@
+---
+format:
+  html: {toc: true, toc-depth: 4, theme: quarto}
+title: Stats with Clojure
+author: Scicloj Team
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+
+# Analysis of Chennai Rainfall
+
+
+## Getting the data
+
+<https://data.opencity.in/dataset/chennai-rainfall-data>
+
+
+
+
+## Viewing the data
+
+using table cloth to read the data
+
+
+### Summerizing the data
+- Which month had highest rainfalls on average?
+- Is rainfall increasing or decreasing over the years?
+  - Plotting total rainfall over the years
+- On which months do we get the most rainfall?
+  - Plotting average rainfall by month
+  - Finding monthly median rainfall
+
+
+## Descriptive Conclusion
+
+
+## Infering the future
+
+
+```{=html}
+<div style="background-color:grey;height:2px;width:100%;"></div>
+```
+
+
+
+```{=html}
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/analysis_of_chennai_rainfall.clj">notebooks/analysis_of_chennai_rainfall.clj</a></small></small></pre></div>
+```

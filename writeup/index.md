@@ -8,6 +8,7 @@
 ## Getting your feet wet
 - Cloning Noj v2 Getting Started
 - [Start with Clay](start_with_clay.html)
+- [Getting Started With Stats With Clojure](getting_started_with_stats_with_clojure.html)
 
 ## Noj and other libraries
 - Noj
@@ -26,6 +27,11 @@
 - Standard Deviation
 - Interquartile Range
 - Distribution
+
+## Project
+
+- [Analysis of Chennai Rainfall](analysis_of_chennai_rainfall.html)
+
  
 ## Books & References
 - [An Introduction to Statistical Learning](https://www.statlearning.com/) 
