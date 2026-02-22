@@ -14,6 +14,15 @@ author: Scicloj Team
 .clay-side-by-side {margin: 1em 0}
 </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+::: {.clay-image}
+
+```{=html}
+<img class="clay-image" src="notebooks/images/stats_with_clojure.png" width="400" />
+```
+
+:::
+
+
 # Index
 - [About This Book](about_this_book.html)
 - [Statistics](statistics.html)
