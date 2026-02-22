@@ -1,0 +1,54 @@
+---
+format:
+  html: {toc: true, toc-depth: 4, theme: quarto}
+title: Stats with Clojure
+author: Scicloj Team
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+# Statistics
+
+**Statistics** is a branch of mathematics that deals with the collection, organization, analysis, interpretation, and presentation of numerical data. It serves as a scientific discipline to transform raw data into meaningful information, enabling informed decision-making in fields ranging from business and medicine to social sciences and engineering.
+
+### Key Aspects of Statistics:
+
+-   **Data Collection**: Gathering relevant information through surveys, experiments, or observations.
+-   **Data Organization**: Structuring data systematically for easier analysis (e.g., using tables, graphs).
+-   **Analysis and Interpretation**: Using mathematical tools to identify patterns, trends, and relationships in data.
+-   **Presentation**: Communicating findings clearly through charts, summaries, or reports.
+    
+
+### Two Main Branches:
+
+-   **Descriptive Statistics**: Summarizes and describes features of a dataset (e.g., mean, median, mode, standard deviation).    
+-   **Inferential Statistics**: Makes predictions or inferences about a larger population based on a sample (e.g., hypothesis testing, confidence intervals).
+
+ 
+### Core Characteristics:
+
+-   Data must be **numerically expressed**.
+-   It involves **aggregates of facts** collected systematically.
+-   Data should be **comparable** and gathered for a **specific purpose**.
+
+
+Statistics helps reduce uncertainty, supports evidence-based decisions, and plays a vital role in understanding complex real-world phenomena.
+
+
+
+```{=html}
+<div style="background-color:grey;height:2px;width:100%;"></div>
+```
+
+
+
+```{=html}
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/statistics.clj">notebooks/statistics.clj</a></small></small></pre></div>
+```

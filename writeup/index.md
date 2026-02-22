@@ -1,5 +1,6 @@
 # Index
 - About This Book
+- [Statistics](statistics.html)
 
 ## Tooling
 - Setting up Visual Studio Code
