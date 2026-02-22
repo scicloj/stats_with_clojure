@@ -1,5 +1,5 @@
 # Index
-- About This Book
+- [About This Book](about_this_book.html)
 - [Statistics](statistics.html)
 
 ## Tooling
