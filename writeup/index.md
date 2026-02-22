@@ -17,7 +17,7 @@
 - Tablecloth
 
 ## Central Tendencies
-- Mean
+- [Mean](mean.html)
 - Median
 - Mode
    
