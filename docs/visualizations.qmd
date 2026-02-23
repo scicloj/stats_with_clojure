@@ -49,6 +49,8 @@ author: Scicloj Team
 
 ## Florence Nightingale's Statistical Diagrams
 
+<https://en.wikipedia.org/wiki/Florence_Nightingale>
+
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/960px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/1/17/Nightingale-mortality.jpg)
