@@ -16,6 +16,9 @@
 - [Plotly](plotly.html)
 - Tablecloth
 
+## Visualizations
+- [Visualizations](visualizations.html)
+
 ## Central Tendencies
 - [Mean](mean.html)
 - Median
