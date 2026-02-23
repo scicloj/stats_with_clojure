@@ -1,0 +1,46 @@
+---
+format:
+  html: {toc: true, toc-depth: 4, theme: quarto}
+title: Stats with Clojure
+author: Scicloj Team
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+## Element
+
+**World's Richest in 2025**
+
+Source: <https://en.wikipedia.org/wiki/The_World%27s_Billionaires>
+
+| No. | Name | Net Worth (USD) | Age | Nationality | Primary Source(s) of Wealth |
+|-----|------|----------------|-----|-------------|----------------------------|
+| 1 | Elon Musk | $342 billion | 53 | South Africa, Canada, United States | Tesla and SpaceX |
+| 2 | Mark Zuckerberg | $216 billion | 40 | United States | Meta Platforms |
+| 3 | Jeff Bezos | $215 billion | 61 | United States | Amazon |
+| 4 | Larry Ellison | $192 billion | 80 | United States | Oracle Corporation |
+| 5 | Bernard Arnault & family | $178 billion | 76 | France | LVMH |
+| 6 | Warren Buffett | $154 billion | 94 | United States | Berkshire Hathaway |
+| 7 | Larry Page | $144 billion | 52 | United States | Google |
+| 8 | Sergey Brin | $138 billion | 51 | United States | Google |
+| 9 | Amancio Ortega | $124 billion | 89 | Spain | Inditex, Zara |
+| 10 | Steve Ballmer | $118 billion | 69 | United States | Microsoft |
+
+
+
+```{=html}
+<div style="background-color:grey;height:2px;width:100%;"></div>
+```
+
+
+
+```{=html}
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/element.clj">notebooks/element.clj</a></small></small></pre></div>
+```

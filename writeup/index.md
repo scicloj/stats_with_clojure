@@ -19,8 +19,9 @@
 ## Visualizations
 - [Visualizations](visualizations.html)
 
-## Sample and Population
+## Statistical Terms
 - [Sample and Population](sample_and_population.html)
+- [Element](element.html)
 
 ## Central Tendencies
 - [Mean](mean.html)
