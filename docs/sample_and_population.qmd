@@ -1,3 +1,19 @@
+---
+format:
+  html: {toc: true, toc-depth: 4, theme: quarto}
+title: Stats with Clojure
+author: Scicloj Team
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
 # Sample and Population
 
 When you want to study a system—for example, a social issue—you cannot ask everyone every question.
@@ -28,3 +44,15 @@ With this knowledge, one must carefully design a sampling strategy to ensure the
 - If a survey is conducted exclusively via a mobile app, it might be used more by millennials than by older generations. In what ways would this data be skewed?
 - If a survey is only conducted using pencil and paper, who is it likely to target, and who might it exclude? How could you mitigate this?
 - If a company executive only asks the board of directors about the company's health, rather than the employees, is he conducting a valid and comprehensive survey?
+
+
+
+```{=html}
+<div style="background-color:grey;height:2px;width:100%;"></div>
+```
+
+
+
+```{=html}
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/sample_and_population.clj">notebooks/sample_and_population.clj</a></small></small></pre></div>
+```

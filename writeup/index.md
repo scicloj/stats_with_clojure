@@ -19,6 +19,9 @@
 ## Visualizations
 - [Visualizations](visualizations.html)
 
+## Sample and Population
+- [Sample and Population](sample_and_population.html)
+
 ## Central Tendencies
 - [Mean](mean.html)
 - Median
