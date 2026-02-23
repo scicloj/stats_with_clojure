@@ -1,5 +1,7 @@
 # Sample and Population
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Day_of_People%E2%80%99s_Unity_-_072.jpg/960px-Day_of_People%E2%80%99s_Unity_-_072.jpg)
+
 When you want to study a system—for example, a social issue—you cannot ask everyone every question.
 Doing so would require immense resources, and making participation mandatory would effectively mean forcing your will on the public, which is not ideal.
 Therefore, statisticians use sampling.
