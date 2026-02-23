@@ -2,6 +2,10 @@
 
 ## The Human Vision
 
+<https://en.wikipedia.org/wiki/Eye>
+
+<https://en.wikipedia.org/wiki/Visual_system>
+
 ![](https://upload.wikimedia.org/wikipedia/commons/d/d0/Three_Main_Layers_of_the_Eye.png)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/Human_visual_pathway.svg)
