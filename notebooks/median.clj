@@ -1,4 +1,7 @@
+^:kindly/hide-code
 (ns median)
+
+;; # Median
 
 ;; for odd number of elements
 

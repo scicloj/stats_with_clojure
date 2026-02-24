@@ -26,7 +26,7 @@
 ## Central Tendencies
 - [Mean](mean.html)
 - [Median](median.html)
-- Mode
+- [Mode](mode.html)
    
 ## Variability
 - Range
