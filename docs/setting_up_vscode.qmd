@@ -1,8 +1,7 @@
 ---
-format:
-  html: {toc: true, toc-depth: 4, theme: quarto}
+format: {}
 title: Stats with Clojure
-author: Scicloj Team
+author: Karthikeyan A K
 
 ---
 <style></style><style>.printedClojure .sourceCode {
@@ -24,10 +23,6 @@ Once downloaded, Please install the following plugins:
 - [Calva Power Tools](https://marketplace.visualstudio.com/items?itemName=BetterThanTomorrow.calva-power-tools)
 
 Calva brings Clojure REPL to Visual Studio code. Calva Power Tools identifies you are opening a SciCloj project and jacks in your project.
-
-
-
-
 
 
 

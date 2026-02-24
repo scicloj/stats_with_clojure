@@ -2,7 +2,7 @@
 format:
   html: {toc: true, toc-depth: 4, theme: quarto}
 title: Stats with Clojure
-author: Scicloj Team
+author: Karthikeyan A K
 
 ---
 <style></style><style>.printedClojure .sourceCode {

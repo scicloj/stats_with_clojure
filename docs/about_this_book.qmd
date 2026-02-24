@@ -1,8 +1,7 @@
 ---
-format:
-  html: {toc: true, toc-depth: 4, theme: quarto}
+format: {}
 title: Stats with Clojure
-author: Scicloj Team
+author: Karthikeyan A K
 
 ---
 <style></style><style>.printedClojure .sourceCode {
@@ -16,7 +15,7 @@ author: Scicloj Team
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
 # About This Book
 
-Starts with Clojure is a book that's written for Clojure programmers who want to learn statistics. We in Scicloj community believe that Clojure is excellent for statistics and data science and hence this book exists to educate Clojure programmers about the mathematics of statistics.
+Starts with Clojure is a book that's written for Clojure programmers who want to learn statistics. We in SciCloj community believe that Clojure is excellent for statistics and data science and hence this book exists to educate Clojure programmers about the mathematics of statistics.
 
 One needs to know Clojure to read this book. But one may not need to know statistics as this book teaches statistics from the ground up.
 
