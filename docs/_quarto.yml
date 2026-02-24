@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: "."
+
+website:
+  title: "Stats with Clojure"
+  search: true
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "Getting Started"
+        contents:
+          - index.qmd
+          - about_this_book.qmd
+      - section: "Tooling"
+        contents:
+          - setting_up_vscode.qmd
+      - section: "Getting your feet wet"
+        contents:
+          - start_with_clay.qmd
+      - section: "Noj and other libraries"
+        contents:
+          - plotly.qmd
+      - section: "Visualizations"
+        contents:
+          - visualizations.qmd
+      - section: "Statistical Terms"
+        contents:
+          - statistics.qmd
+          - sample_and_population.qmd
+          - element.qmd
+      - section: "Central Tendencies"
+        contents:
+          - mean.qmd
+          - median.qmd
+          - mode.qmd
+      - section: "Variability"
+        contents:
+          - gini_coefficient.qmd
+      - section: "Project"
+        contents:
+          - analysis_of_chennai_rainfall.qmd
+
+format:
+  html:
+    theme: quarto
+    toc: true
+    toc-depth: 4
+    number-sections: true
