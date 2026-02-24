@@ -1,5 +1,9 @@
 {:remote-repo {:git-url "https://github.com/scicloj/stats_with_clojure"
                :branch "main"}
+ :format [:quarto]
  :quarto {:title "Stats with Clojure"
           :author "Karthikeyan A K"
-          :format {:html {:theme "quarto"}}}}
+          :toc true
+          :toc-depth 4
+          :number-sections true
+          :theme "quarto"}}

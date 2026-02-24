@@ -1,8 +1,11 @@
 ---
-format:
-  html: {toc: true, toc-depth: 4, theme: quarto}
+format: {}
 title: Stats with Clojure
 author: Karthikeyan A K
+toc: true
+toc-depth: 4
+number-sections: true
+theme: quarto
 
 ---
 <style></style><style>.printedClojure .sourceCode {
