@@ -1,5 +1,280 @@
 [
   {
+    "objectID": "mean.html",
+    "href": "mean.html",
+    "title": "1 Mean",
+    "section": "",
+    "text": "\\[\n\\mu = \\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\n\n(def numbers [1 17 4 -7 6 12 -15 4 10 12])\n\n\\[\n\\sum_{i=1}^{n} x_i\n\\]\n\n(apply + numbers)\n\n\n44\n\n\\[\nn\n\\]\n\n(count numbers)\n\n\n10\n\n\\[\n\\frac{\\sum_{i=1}^{n} x_i}{n}\n\\]\n\n(/ (apply + numbers) (count numbers))\n\n\n22/5\n\n\n(float (/ (apply + numbers) (count numbers)))\n\n\n4.4\n\n\n(defn mean [numbers]\n  (float (/ (apply + numbers) (count numbers))))\n\n\n(mean numbers)\n\n\n4.4\n\n\n\n\nsource: notebooks/mean.clj",
+    "crumbs": [
+      "Central Tendencies",
+      "Mean"
+    ]
+  },
+  {
+    "objectID": "mean.html#visualizing-the-mean",
+    "href": "mean.html#visualizing-the-mean",
+    "title": "1 Mean",
+    "section": "",
+    "text": "source: notebooks/mean.clj",
+    "crumbs": [
+      "Central Tendencies",
+      "Mean"
+    ]
+  },
+  {
+    "objectID": "start_with_clay.html",
+    "href": "start_with_clay.html",
+    "title": "Stats with Clojure",
+    "section": "",
+    "text": "(ns start-with-clay)\n\nSimple math\n\n(+ 1 2)\n\n\n3\n\nClojure version is:\n\n(clojure-version)\n\n\n\"1.12.4\"\n\nI jacked out and jacked in\n\nsource: notebooks/start_with_clay.clj",
+    "crumbs": [
+      "Getting your feet wet",
+      "Start with Clay"
+    ]
+  },
+  {
+    "objectID": "sample_and_population.html",
+    "href": "sample_and_population.html",
+    "title": "1 Sample and Population",
+    "section": "",
+    "text": "When you want to study a system—for example, a social issue—you cannot ask everyone every question. Doing so would require immense resources, and making participation mandatory would effectively mean forcing your will on the public, which is not ideal. Therefore, statisticians use sampling. From the entire population, they select a smaller group of people to survey. Some may choose to answer, while others may not.\nThe subset of people who actually provide responses is called the sample, while the entire group of interest (e.g., all citizens of a nation) is called the population. Although the sample size is usually much smaller than the population, statisticians can still produce accurate predictions if the sample is representative.\n\n\nConsider a scenario where you are surveying the lifestyle of people in India. If you only take samples from highly developed states like Tamil Nadu or Maharashtra, your results will be skewed and unrepresentative of the country as a whole. To get an accurate picture, sampling must be done in a way that includes people from all states and diverse backgrounds.\nAnother type of bias can arise from population density. For instance, states like Arunachal Pradesh or Meghalaya have significantly fewer people than Bihar or Uttar Pradesh. If you collect samples without considering the population size, or if you disproportionately favor less populous states, your data can become skewed.\nEffective sampling requires prior knowledge of the system. With this knowledge, one must carefully design a sampling strategy to ensure the results accurately reflect the population.\n\n\n\n\nIf you were a statistician working for the Afghan government and were denied the opportunity to survey women, do you think you could reach accurate conclusions about the country’s state?\nIf a survey is conducted exclusively via a mobile app, it might be used more by millennials than by older generations. In what ways would this data be skewed?\nIf a survey is only conducted using pencil and paper, who is it likely to target, and who might it exclude? How could you mitigate this?\nIf a company executive only asks the board of directors about the company’s health, rather than the employees, is he conducting a valid and comprehensive survey?\n\n\nsource: notebooks/sample_and_population.clj",
+    "crumbs": [
+      "Statistical Terms",
+      "Sample and Population"
+    ]
+  },
+  {
+    "objectID": "sample_and_population.html#sampling-bias",
+    "href": "sample_and_population.html#sampling-bias",
+    "title": "1 Sample and Population",
+    "section": "",
+    "text": "Consider a scenario where you are surveying the lifestyle of people in India. If you only take samples from highly developed states like Tamil Nadu or Maharashtra, your results will be skewed and unrepresentative of the country as a whole. To get an accurate picture, sampling must be done in a way that includes people from all states and diverse backgrounds.\nAnother type of bias can arise from population density. For instance, states like Arunachal Pradesh or Meghalaya have significantly fewer people than Bihar or Uttar Pradesh. If you collect samples without considering the population size, or if you disproportionately favor less populous states, your data can become skewed.\nEffective sampling requires prior knowledge of the system. With this knowledge, one must carefully design a sampling strategy to ensure the results accurately reflect the population.",
+    "crumbs": [
+      "Statistical Terms",
+      "Sample and Population"
+    ]
+  },
+  {
+    "objectID": "sample_and_population.html#food-for-thought",
+    "href": "sample_and_population.html#food-for-thought",
+    "title": "1 Sample and Population",
+    "section": "",
+    "text": "If you were a statistician working for the Afghan government and were denied the opportunity to survey women, do you think you could reach accurate conclusions about the country’s state?\nIf a survey is conducted exclusively via a mobile app, it might be used more by millennials than by older generations. In what ways would this data be skewed?\nIf a survey is only conducted using pencil and paper, who is it likely to target, and who might it exclude? How could you mitigate this?\nIf a company executive only asks the board of directors about the company’s health, rather than the employees, is he conducting a valid and comprehensive survey?\n\n\nsource: notebooks/sample_and_population.clj",
+    "crumbs": [
+      "Statistical Terms",
+      "Sample and Population"
+    ]
+  },
+  {
+    "objectID": "gini_coefficient.html",
+    "href": "gini_coefficient.html",
+    "title": "1 Gini Coefficient",
+    "section": "",
+    "text": "1 Gini Coefficient\nhttps://en.wikipedia.org/wiki/Gini_coefficient\nhttps://claude.ai/share/579bde64-9735-4947-9889-916f4991064f\n\\[\nG = \\frac{2 \\sum_{i=1}^{n} i \\cdot x_i}{n \\sum_{i=1}^{n} x_i} - \\frac{n+1}{n}\n\\]\n\n(defn gini-coefficient [xs]\n  (let [n    (count xs)\n        sorted (sort xs)\n        indexed-sum (reduce-kv\n                     (fn [acc i x] (+ acc (* (inc i) x)))\n                     0\n                     (vec sorted))\n        total (reduce + xs)]\n    (if (or (zero? n) (zero? total))\n      0.0\n      (/ (- (* 2.0 indexed-sum)\n            (* (inc n) total))\n         (* n total)))))\n\nPerfect equality (all same values)\n\n(gini-coefficient [1 1 1 1])\n\n\n0.0\n\n=&gt; 0.0\nPerfect inequality (one person has everything)\n\n(gini-coefficient [0 0 0 10])\n\n\n0.75\n\n=&gt; 0.75 (approaches 1.0 as n → ∞)\nTypical case\n\n(gini-coefficient [1 2 3 4 5])\n\n\n0.26666666666666666\n\n=&gt; 0.26666…\nReal-world-like income distribution\n\n(gini-coefficient [10000 20000 30000 100000 500000])\n\n\n0.6424242424242425\n\n=&gt; 0.5942…\nHere’s a clean implementation of the Gini coefficient in Clojure:\n\n(defn gini-coefficient [xs]\n  (let [n    (count xs)\n        sorted (sort xs)\n        indexed-sum (reduce-kv\n                     (fn [acc i x] (+ acc (* (inc i) x)))\n                     0\n                     (vec sorted))\n        total (reduce + xs)]\n    (if (or (zero? n) (zero? total))\n      0.0\n      (/ (- (* 2.0 indexed-sum)\n            (* (inc n) total))\n         (* n total)))))\n\nHow it works:\nThe formula used is:\n\\[G = \\frac{2 \\sum_{i=1}^{n} i \\cdot x_i}{n \\sum x_i} - \\frac{n+1}{n}\\]\nwhere values are sorted in ascending order and i is 1-based index.\nExample usage:\nPerfect equality (all same values)\n\n(gini-coefficient [1 1 1 1])\n\n\n0.0\n\n=&gt; 0.0\nPerfect inequality (one person has everything)\n\n(gini-coefficient [0 0 0 10])\n\n\n0.75\n\n=&gt; 0.75 (approaches 1.0 as n → ∞)\nTypical case\n\n(gini-coefficient [1 2 3 4 5])\n\n\n0.26666666666666666\n\n=&gt; 0.26666…\nReal-world-like income distribution\n\n(gini-coefficient [10000 20000 30000 100000 500000])\n\n\n0.6424242424242425\n\n=&gt; 0.5942…\nA few notes:\n\nThe result is in the range [0, 1] where 0 = perfect equality and 1 = perfect inequality.\nEdge cases handled: empty vector and all-zero values return 0.0.\nThis assumes all values are non-negative (as income/wealth typically is).\nFor large vectors, consider using (double x) coercions to avoid ratio arithmetic slowdowns.\n\n\n(defn gini-coefficient [xs]\n  (let [n             (count xs)\n        sorted        (sort xs)\n        indexed-sum   (reduce-kv\n                       (fn [acc i x] (+ acc (* (double (inc i)) (double x))))\n                       0.0\n                       (vec sorted))\n        total         (reduce #(+ %1 (double %2)) 0.0 xs)]\n    (if (or (zero? n) (zero? total))\n      0.0\n      (/ (- (* 2.0 indexed-sum)\n            (* (double (inc n)) total))\n         (* (double n) total)))))\n\nPerfect inequality (one person has everything)\n\n(gini-coefficient [0 0 0 10])\n\n\n0.75\n\nTypical case\n\n(gini-coefficient [1 2 3 4 5])\n\n\n0.26666666666666666\n\nReal-world-like income distribution\n\n(gini-coefficient [10000 20000 30000 100000 500000])\n\n\n0.6424242424242425\n\n\nsource: notebooks/gini_coefficient.clj",
+    "crumbs": [
+      "Variability",
+      "Gini Coefficient"
+    ]
+  },
+  {
+    "objectID": "index.html#tooling",
+    "href": "index.html#tooling",
+    "title": "1 Index",
+    "section": "1.1 Tooling",
+    "text": "1.1 Tooling\n\nSetting up Visual Studio Code",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-your-feet-wet",
+    "href": "index.html#getting-your-feet-wet",
+    "title": "1 Index",
+    "section": "1.2 Getting your feet wet",
+    "text": "1.2 Getting your feet wet\n\nCloning Noj v2 Getting Started\nStart with Clay\nGetting Started With Stats With Clojure",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#noj-and-other-libraries",
+    "href": "index.html#noj-and-other-libraries",
+    "title": "1 Index",
+    "section": "1.3 Noj and other libraries",
+    "text": "1.3 Noj and other libraries\n\nNoj\nKindly\nPlotly\nTablecloth",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#visualizations",
+    "href": "index.html#visualizations",
+    "title": "1 Index",
+    "section": "1.4 Visualizations",
+    "text": "1.4 Visualizations\n\nVisualizations",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#statistical-terms",
+    "href": "index.html#statistical-terms",
+    "title": "1 Index",
+    "section": "1.5 Statistical Terms",
+    "text": "1.5 Statistical Terms\n\nSample and Population\nElement",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#central-tendencies",
+    "href": "index.html#central-tendencies",
+    "title": "1 Index",
+    "section": "1.6 Central Tendencies",
+    "text": "1.6 Central Tendencies\n\nMean\nMedian\nMode",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#variability",
+    "href": "index.html#variability",
+    "title": "1 Index",
+    "section": "1.7 Variability",
+    "text": "1.7 Variability\n\nRange\nVariance\nStandard Deviation\nInterquartile Range\nDistribution\nSkewness\nKurtosis\nCorrelation\nCovariance\nRegression\nGini Coefficient\nEntropy\nMutual Information\nKullback-Leibler Divergence\nJensen-Shannon Divergence\nWasserstein Distance\nEarth Mover’s Distance\nJaccard Similarity\nCosine Similarity\nPearson Correlation\nSpearman Correlation\nKendall Correlation",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#project",
+    "href": "index.html#project",
+    "title": "1 Index",
+    "section": "1.8 Project",
+    "text": "1.8 Project\n\nAnalysis of Chennai Rainfall",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "index.html#books-references",
+    "href": "index.html#books-references",
+    "title": "1 Index",
+    "section": "1.9 Books & References",
+    "text": "1.9 Books & References\n\nAn Introduction to Statistical Learning\nKhan Academy Probability & Statistics Course\nInformation Theory, Inference, and Learning Algorithms\nAll of Statistics\n\n\nsource: notebooks/index.clj",
+    "crumbs": [
+      "Getting Started",
+      "Index"
+    ]
+  },
+  {
+    "objectID": "element.html",
+    "href": "element.html",
+    "title": "Stats with Clojure",
+    "section": "",
+    "text": "World’s Richest in 2025\nSource: https://en.wikipedia.org/wiki/The_World%27s_Billionaires\n\n\n\n\n\n\n\n\n\n\n\nNo.\nName\nNet Worth (USD)\nAge\nNationality\nPrimary Source(s) of Wealth\n\n\n\n\n1\nElon Musk\n$342 billion\n53\nSouth Africa, Canada, United States\nTesla and SpaceX\n\n\n2\nMark Zuckerberg\n$216 billion\n40\nUnited States\nMeta Platforms\n\n\n3\nJeff Bezos\n$215 billion\n61\nUnited States\nAmazon\n\n\n4\nLarry Ellison\n$192 billion\n80\nUnited States\nOracle Corporation\n\n\n5\nBernard Arnault & family\n$178 billion\n76\nFrance\nLVMH\n\n\n6\nWarren Buffett\n$154 billion\n94\nUnited States\nBerkshire Hathaway\n\n\n7\nLarry Page\n$144 billion\n52\nUnited States\nGoogle\n\n\n8\nSergey Brin\n$138 billion\n51\nUnited States\nGoogle\n\n\n9\nAmancio Ortega\n$124 billion\n89\nSpain\nInditex, Zara\n\n\n10\nSteve Ballmer\n$118 billion\n69\nUnited States\nMicrosoft\n\n\n\n\nsource: notebooks/element.clj",
+    "crumbs": [
+      "Statistical Terms",
+      "Element"
+    ]
+  },
+  {
+    "objectID": "element.html#element",
+    "href": "element.html#element",
+    "title": "Stats with Clojure",
+    "section": "",
+    "text": "World’s Richest in 2025\nSource: https://en.wikipedia.org/wiki/The_World%27s_Billionaires\n\n\n\n\n\n\n\n\n\n\n\nNo.\nName\nNet Worth (USD)\nAge\nNationality\nPrimary Source(s) of Wealth\n\n\n\n\n1\nElon Musk\n$342 billion\n53\nSouth Africa, Canada, United States\nTesla and SpaceX\n\n\n2\nMark Zuckerberg\n$216 billion\n40\nUnited States\nMeta Platforms\n\n\n3\nJeff Bezos\n$215 billion\n61\nUnited States\nAmazon\n\n\n4\nLarry Ellison\n$192 billion\n80\nUnited States\nOracle Corporation\n\n\n5\nBernard Arnault & family\n$178 billion\n76\nFrance\nLVMH\n\n\n6\nWarren Buffett\n$154 billion\n94\nUnited States\nBerkshire Hathaway\n\n\n7\nLarry Page\n$144 billion\n52\nUnited States\nGoogle\n\n\n8\nSergey Brin\n$138 billion\n51\nUnited States\nGoogle\n\n\n9\nAmancio Ortega\n$124 billion\n89\nSpain\nInditex, Zara\n\n\n10\nSteve Ballmer\n$118 billion\n69\nUnited States\nMicrosoft\n\n\n\n\nsource: notebooks/element.clj",
+    "crumbs": [
+      "Statistical Terms",
+      "Element"
+    ]
+  },
+  {
+    "objectID": "visualizations.html",
+    "href": "visualizations.html",
+    "title": "1 Visualizations",
+    "section": "",
+    "text": "https://en.wikipedia.org/wiki/Eye\nhttps://en.wikipedia.org/wiki/Visual_system\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/French_invasion_of_Russia\n\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak\n\n\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/Florence_Nightingale\n\n\n\nsource: notebooks/visualizations.clj",
+    "crumbs": [
+      "Visualizations",
+      "Visualizations"
+    ]
+  },
+  {
+    "objectID": "visualizations.html#the-human-vision",
+    "href": "visualizations.html#the-human-vision",
+    "title": "1 Visualizations",
+    "section": "",
+    "text": "https://en.wikipedia.org/wiki/Eye\nhttps://en.wikipedia.org/wiki/Visual_system",
+    "crumbs": [
+      "Visualizations",
+      "Visualizations"
+    ]
+  },
+  {
+    "objectID": "visualizations.html#napoleons-invasion-of-russia",
+    "href": "visualizations.html#napoleons-invasion-of-russia",
+    "title": "1 Visualizations",
+    "section": "",
+    "text": "https://en.wikipedia.org/wiki/French_invasion_of_Russia",
+    "crumbs": [
+      "Visualizations",
+      "Visualizations"
+    ]
+  },
+  {
+    "objectID": "visualizations.html#londons-cholera-epidemic",
+    "href": "visualizations.html#londons-cholera-epidemic",
+    "title": "1 Visualizations",
+    "section": "",
+    "text": "https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak",
+    "crumbs": [
+      "Visualizations",
+      "Visualizations"
+    ]
+  },
+  {
+    "objectID": "visualizations.html#florence-nightingales-statistical-diagrams",
+    "href": "visualizations.html#florence-nightingales-statistical-diagrams",
+    "title": "1 Visualizations",
+    "section": "",
+    "text": "https://en.wikipedia.org/wiki/Florence_Nightingale\n\n\n\nsource: notebooks/visualizations.clj",
+    "crumbs": [
+      "Visualizations",
+      "Visualizations"
+    ]
+  },
+  {
+    "objectID": "median.html",
+    "href": "median.html",
+    "title": "1 Median",
+    "section": "",
+    "text": "1 Median\nfor odd number of elements\n\n(def numbers [1 2 3])\n\n\nnumbers\n\n\n[1 2 3]\n\n\n(nth numbers (/ (count numbers) 2))\n\n\n2\n\nfor even number of elements\n\n(def numbers [1 2 3 4])\n\n\nnumbers\n\n\n[1 2 3 4]\n\n\n(count numbers)\n\n\n4\n\n\n(/ (count numbers) 2)\n\n\n2\n\n\n(nth numbers (/ (count numbers) 2))\n\n\n3\n\n\n(dec (/ (count numbers) 2))\n\n\n1\n\n\n(nth numbers (dec (/ (count numbers) 2)))\n\n\n2\n\nmedian\n\n(defn median [numbers]\n  (let [n (count numbers)\n        sorted-numbers (sort numbers)]\n    (if (odd? n)\n      (nth sorted-numbers (/ n 2))\n      (let [mid1 (nth sorted-numbers (/ n 2))\n            mid2 (nth sorted-numbers (dec (/ n 2)))]\n        (float (/ (+ mid1 mid2) 2))))))\n\n\n(median [1 2 3])\n\n\n2\n\n\n(median [1 2 3 4])\n\n\n2.5\n\n\n(median [2 1 3])\n\n\n2\n\n\n(median [2 1 4 3])\n\n\n2.5\n\n\nsource: notebooks/median.clj",
+    "crumbs": [
+      "Central Tendencies",
+      "Median"
+    ]
+  },
+  {
+    "objectID": "about_this_book.html",
+    "href": "about_this_book.html",
+    "title": "1 About This Book",
+    "section": "",
+    "text": "1 About This Book\nStarts with Clojure is a book that’s written for Clojure programmers who want to learn statistics. We in SciCloj community believe that Clojure is excellent for statistics and data science and hence this book exists to educate Clojure programmers about the mathematics of statistics.\nOne needs to know Clojure to read this book. But one may not need to know statistics as this book teaches statistics from the ground up.\n\nsource: notebooks/about_this_book.clj",
+    "crumbs": [
+      "Getting Started",
+      "About This Book"
+    ]
+  },
+  {
     "objectID": "plotly.html",
     "href": "plotly.html",
     "title": "1 Scatter Plot",
@@ -85,6 +360,83 @@
     "crumbs": [
       "Noj and other libraries",
       "Plotly"
+    ]
+  },
+  {
+    "objectID": "mode.html",
+    "href": "mode.html",
+    "title": "1 Mode",
+    "section": "",
+    "text": "1 Mode\n\n(def numbers [1 2 2 3 3 3 4 4 4 4 5 5 5 5 5])\n\n\nnumbers\n\n\n[1 2 2 3 3 3 4 4 4 4 5 5 5 5 5]\n\n\n(frequencies numbers)\n\n\n{1 1, 2 2, 3 3, 4 4, 5 5}\n\n\n(sort-by second (frequencies numbers))\n\n\n([1 1] [2 2] [3 3] [4 4] [5 5])\n\n\n(last (sort-by second (frequencies numbers)))\n\n\n[5 5]\n\n\n(first (last (sort-by second (frequencies numbers))))\n\n\n5\n\n\n(defn mode [numbers]\n  (first (last (sort-by second (frequencies numbers)))))\n\n\n(mode numbers)\n\n\n5\n\n\n(mode [1 2 3 4 5 6])\n\n\n6\n\nFixing the mode function\n\n(defn mode [numbers]\n  (let [freqs (frequencies numbers)\n        max-freq (apply max (vals freqs))]\n    (filter #(= (second %) max-freq) freqs)))\n\n\n(mode numbers)\n\n\n([5 5])\n\n\n(mode [1 2 3 4 5 6])\n\n\n([1 1] [2 1] [3 1] [4 1] [5 1] [6 1])\n\nExtracting values from the mode function\n\n(map first (mode numbers))\n\n\n(5)\n\n\n(map first (mode [1 2 3 4 5 6]))\n\n\n(1 2 3 4 5 6)\n\n\n(defn mode [numbers]\n  (let [freqs (frequencies numbers)\n        max-freq (apply max (vals freqs))]\n    (map first (filter #(= (second %) max-freq) freqs))))\n\n\n(mode numbers)\n\n\n(5)\n\n\n(mode [1 2 3 4 5 6])\n\n\n(1 2 3 4 5 6)\n\n\n(mode [1 1 2 2 3 3])\n\n\n(1 2 3)\n\nReturn number if only single mode is present\n\n(defn mode [numbers]\n  (let [freqs (frequencies numbers)\n        max-freq (apply max (vals freqs))]\n    (if (= (count (filter #(= (second %) max-freq) freqs)) 1)\n      (first (first (filter #(= (second %) max-freq) freqs)))\n      (map first (filter #(= (second %) max-freq) freqs)))))\n\n\n(mode [1 2 3 4 5 6])\n\n\n(1 2 3 4 5 6)\n\n\n(mode [3 1 1 2 2 3 3])\n\n\n3\n\n\nsource: notebooks/mode.clj",
+    "crumbs": [
+      "Central Tendencies",
+      "Mode"
+    ]
+  },
+  {
+    "objectID": "setting_up_vscode.html",
+    "href": "setting_up_vscode.html",
+    "title": "1 Setting up Visual Studio Code",
+    "section": "",
+    "text": "1 Setting up Visual Studio Code\nThis book recommends using Visual Studio Code or its derivatives to use as the IDE to learn statistics with Clojure. One may download Visual Studio Code and install it following the instructions here.\nOnce downloaded, Please install the following plugins:\n\nCalva\nCalva Power Tools\n\nCalva brings Clojure REPL to Visual Studio code. Calva Power Tools identifies you are opening a SciCloj project and jacks in your project.\n\nsource: notebooks/setting_up_vscode.clj",
+    "crumbs": [
+      "Tooling",
+      "Setting up VS Code"
+    ]
+  },
+  {
+    "objectID": "analysis_of_chennai_rainfall.html",
+    "href": "analysis_of_chennai_rainfall.html",
+    "title": "1 Analysis of Chennai Rainfall",
+    "section": "",
+    "text": "https://data.opencity.in/dataset/chennai-rainfall-data\n\n\n\nusing table cloth to read the data\n\n\n\nWhich month had highest rainfalls on average?\nIs rainfall increasing or decreasing over the years?\n\nPlotting total rainfall over the years\n\nOn which months do we get the most rainfall?\n\nPlotting average rainfall by month\nFinding monthly median rainfall\n\n\n\n\n\n\n\n\n\n\nsource: notebooks/analysis_of_chennai_rainfall.clj",
+    "crumbs": [
+      "Project",
+      "Chennai Rainfall Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis_of_chennai_rainfall.html#getting-the-data",
+    "href": "analysis_of_chennai_rainfall.html#getting-the-data",
+    "title": "1 Analysis of Chennai Rainfall",
+    "section": "",
+    "text": "https://data.opencity.in/dataset/chennai-rainfall-data",
+    "crumbs": [
+      "Project",
+      "Chennai Rainfall Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis_of_chennai_rainfall.html#viewing-the-data",
+    "href": "analysis_of_chennai_rainfall.html#viewing-the-data",
+    "title": "1 Analysis of Chennai Rainfall",
+    "section": "",
+    "text": "using table cloth to read the data\n\n\n\nWhich month had highest rainfalls on average?\nIs rainfall increasing or decreasing over the years?\n\nPlotting total rainfall over the years\n\nOn which months do we get the most rainfall?\n\nPlotting average rainfall by month\nFinding monthly median rainfall",
+    "crumbs": [
+      "Project",
+      "Chennai Rainfall Analysis"
+    ]
+  },
+  {
+    "objectID": "analysis_of_chennai_rainfall.html#infering-the-future",
+    "href": "analysis_of_chennai_rainfall.html#infering-the-future",
+    "title": "1 Analysis of Chennai Rainfall",
+    "section": "",
+    "text": "source: notebooks/analysis_of_chennai_rainfall.clj",
+    "crumbs": [
+      "Project",
+      "Chennai Rainfall Analysis"
+    ]
+  },
+  {
+    "objectID": "statistics.html",
+    "href": "statistics.html",
+    "title": "1 Statistics",
+    "section": "",
+    "text": "1 Statistics\nStatistics is a branch of mathematics that deals with the collection, organization, analysis, interpretation, and presentation of numerical data. It serves as a scientific discipline to transform raw data into meaningful information, enabling informed decision-making in fields ranging from business and medicine to social sciences and engineering.\n\n1.0.1 Key Aspects of Statistics:\n\nData Collection: Gathering relevant information through surveys, experiments, or observations.\nData Organization: Structuring data systematically for easier analysis (e.g., using tables, graphs).\nAnalysis and Interpretation: Using mathematical tools to identify patterns, trends, and relationships in data.\nPresentation: Communicating findings clearly through charts, summaries, or reports.\n\n\n\n1.0.2 Two Main Branches:\n\nDescriptive Statistics: Summarizes and describes features of a dataset (e.g., mean, median, mode, standard deviation).\n\nInferential Statistics: Makes predictions or inferences about a larger population based on a sample (e.g., hypothesis testing, confidence intervals).\n\n\n\n1.0.3 Core Characteristics:\n\nData must be numerically expressed.\nIt involves aggregates of facts collected systematically.\nData should be comparable and gathered for a specific purpose.\n\nStatistics helps reduce uncertainty, supports evidence-based decisions, and plays a vital role in understanding complex real-world phenomena.\n\nsource: notebooks/statistics.clj",
+    "crumbs": [
+      "Statistical Terms",
+      "Statistics Overview"
     ]
   }
 ]
