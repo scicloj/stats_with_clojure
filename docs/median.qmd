@@ -35,6 +35,23 @@ for odd number of elements
 
 ::: {.sourceClojure}
 ```clojure
+numbers
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+[1 2 3]
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
 (nth numbers (/ (count numbers) 2))
 ```
 :::
@@ -167,11 +184,12 @@ median
 ::: {.sourceClojure}
 ```clojure
 (defn median [numbers]
-  (let [n (count numbers)]
+  (let [n (count numbers)
+        sorted-numbers (sort numbers)]
     (if (odd? n)
-      (nth numbers (/ n 2))
-      (let [mid1 (nth numbers (/ n 2))
-            mid2 (nth numbers (dec (/ n 2)))]
+      (nth sorted-numbers (/ n 2))
+      (let [mid1 (nth sorted-numbers (/ n 2))
+            mid2 (nth sorted-numbers (dec (/ n 2)))]
         (float (/ (+ mid1 mid2) 2))))))
 ```
 :::
@@ -198,6 +216,40 @@ median
 ::: {.sourceClojure}
 ```clojure
 (median [1 2 3 4])
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+2.5
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(median [2 1 3])
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+2
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(median [2 1 4 3])
 ```
 :::
 

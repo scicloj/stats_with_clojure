@@ -27,11 +27,12 @@ numbers
 ;; median
 
 (defn median [numbers]
-  (let [n (count numbers)]
+  (let [n (count numbers)
+        sorted-numbers (sort numbers)]
     (if (odd? n)
-      (nth numbers (/ n 2))
-      (let [mid1 (nth numbers (/ n 2))
-            mid2 (nth numbers (dec (/ n 2)))]
+      (nth sorted-numbers (/ n 2))
+      (let [mid1 (nth sorted-numbers (/ n 2))
+            mid2 (nth sorted-numbers (dec (/ n 2)))]
         (float (/ (+ mid1 mid2) 2))))))
 
 
@@ -39,3 +40,6 @@ numbers
 
 (median [1 2 3 4])
 
+(median [2 1 3])
+
+(median [2 1 4 3])
