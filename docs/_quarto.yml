@@ -11,36 +11,50 @@ website:
     contents:
       - section: "Getting Started"
         contents:
-          - index.qmd
-          - about_this_book.qmd
+          - text: "Index"
+            file: index.qmd
+          - text: "About This Book"
+            file: about_this_book.qmd
       - section: "Tooling"
         contents:
-          - setting_up_vscode.qmd
+          - text: "Setting up VS Code"
+            file: setting_up_vscode.qmd
       - section: "Getting your feet wet"
         contents:
-          - start_with_clay.qmd
+          - text: "Start with Clay"
+            file: start_with_clay.qmd
       - section: "Noj and other libraries"
         contents:
-          - plotly.qmd
+          - text: "Plotly"
+            file: plotly.qmd
       - section: "Visualizations"
         contents:
-          - visualizations.qmd
+          - text: "Visualizations"
+            file: visualizations.qmd
       - section: "Statistical Terms"
         contents:
-          - statistics.qmd
-          - sample_and_population.qmd
-          - element.qmd
+          - text: "Statistics Overview"
+            file: statistics.qmd
+          - text: "Sample and Population"
+            file: sample_and_population.qmd
+          - text: "Element"
+            file: element.qmd
       - section: "Central Tendencies"
         contents:
-          - mean.qmd
-          - median.qmd
-          - mode.qmd
+          - text: "Mean"
+            file: mean.qmd
+          - text: "Median"
+            file: median.qmd
+          - text: "Mode"
+            file: mode.qmd
       - section: "Variability"
         contents:
-          - gini_coefficient.qmd
+          - text: "Gini Coefficient"
+            file: gini_coefficient.qmd
       - section: "Project"
         contents:
-          - analysis_of_chennai_rainfall.qmd
+          - text: "Chennai Rainfall Analysis"
+            file: analysis_of_chennai_rainfall.qmd
 
 format:
   html:

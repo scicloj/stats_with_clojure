@@ -22,7 +22,7 @@
                                  :browse false})))
 
     (println "Finalizing searchable index and sidebar...")
-    (let [{:keys [exit out err]} (sh/with-sh-dir "docs" (sh/sh "quarto" "render" "."))]
+    (let [{:keys [exit _out err]} (sh/with-sh-dir "docs" (sh/sh "quarto" "render" "."))]
       (if (zero? exit)
         (println "Documentation built successfully with searchable index.")
         (do
