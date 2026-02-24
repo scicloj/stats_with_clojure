@@ -1,0 +1,64 @@
+project:
+  type: website
+  output-dir: "."
+
+website:
+  title: "Stats with Clojure"
+  search: true
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "Getting Started"
+        contents:
+          - text: "Index"
+            file: index.qmd
+          - text: "About This Book"
+            file: about_this_book.qmd
+      - section: "Tooling"
+        contents:
+          - text: "Setting up VS Code"
+            file: setting_up_vscode.qmd
+      - section: "Getting your feet wet"
+        contents:
+          - text: "Start with Clay"
+            file: start_with_clay.qmd
+      - section: "Noj and other libraries"
+        contents:
+          - text: "Plotly"
+            file: plotly.qmd
+      - section: "Visualizations"
+        contents:
+          - text: "Visualizations"
+            file: visualizations.qmd
+      - section: "Statistical Terms"
+        contents:
+          - text: "Statistics Overview"
+            file: statistics.qmd
+          - text: "Sample and Population"
+            file: sample_and_population.qmd
+          - text: "Element"
+            file: element.qmd
+      - section: "Central Tendencies"
+        contents:
+          - text: "Mean"
+            file: mean.qmd
+          - text: "Median"
+            file: median.qmd
+          - text: "Mode"
+            file: mode.qmd
+      - section: "Variability"
+        contents:
+          - text: "Gini Coefficient"
+            file: gini_coefficient.qmd
+      - section: "Project"
+        contents:
+          - text: "Chennai Rainfall Analysis"
+            file: analysis_of_chennai_rainfall.qmd
+
+format:
+  html:
+    theme: quarto
+    toc: true
+    toc-depth: 4
+    number-sections: true

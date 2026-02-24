@@ -1,7 +1,5 @@
 ---
 format: {}
-title: Stats with Clojure
-author: Karthikeyan A K
 toc: true
 toc-depth: 4
 number-sections: true
