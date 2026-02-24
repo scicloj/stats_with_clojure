@@ -34,6 +34,23 @@
 - Standard Deviation
 - Interquartile Range
 - Distribution
+- Skewness
+- Kurtosis
+- Correlation
+- Covariance
+- Regression
+- [Gini Coefficient](gini_coefficient.html)
+- Entropy
+- Mutual Information
+- Kullback-Leibler Divergence
+- Jensen-Shannon Divergence
+- Wasserstein Distance
+- Earth Mover's Distance
+- Jaccard Similarity
+- Cosine Similarity
+- Pearson Correlation
+- Spearman Correlation
+- Kendall Correlation
 
 ## Project
 
