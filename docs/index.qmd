@@ -1,5 +1,6 @@
 ---
-format: {}
+format:
+  html: {toc: true, toc-depth: 4, theme: cosmo}
 toc: true
 toc-depth: 4
 number-sections: true
@@ -48,6 +49,9 @@ theme: quarto
 ## Statistical Terms
 - [Sample and Population](sample_and_population.html)
 - [Element](element.html)
+
+## Random Number Generator
+- [Random Number Generator](random_number_generator.html)
 
 ## Central Tendencies
 - [Mean](mean.html)

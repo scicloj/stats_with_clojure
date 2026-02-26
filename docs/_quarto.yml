@@ -39,6 +39,10 @@ website:
             file: sample_and_population.qmd
           - text: "Element"
             file: element.qmd
+      - section: "Random Number Generator"
+        contents:
+          - text: "Random Number Generator"
+            file: random_number_generator.qmd
       - section: "Central Tendencies"
         contents:
           - text: "Mean"

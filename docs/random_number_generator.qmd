@@ -1,0 +1,312 @@
+---
+format:
+  html: {toc: true, toc-depth: 4, theme: cosmo}
+toc: true
+toc-depth: 4
+number-sections: true
+theme: quarto
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+
+::: {.sourceClojure}
+```clojure
+(rand)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+0.40513618553948627
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(rand-int 10)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+0
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(take 10 (repeatedly #(rand-int 10)))
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+(1 7 4 9 7 4 5 8 3 1)
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(mod 10 3)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+1
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(defn random-number [min max]
+  (+ (rand-int (- (inc max) min)) min))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-number 32 42)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+34
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-number 32 42)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+34
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(take 5 (repeatedly #(random-number 32 42)))
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+(38 38 41 36 41)
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(defn random-number
+  ([min max]
+   (+ (rand-int (- (inc max) min)) min))
+  ([max]
+   (random-number 0 max))
+  ([]
+   (random-number 0 1)))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-number 10)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+0
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-number)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+0
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-number 10 20)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+19
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(defn random-numbers [n min max]
+  (take n (repeatedly #(random-number min max))))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-numbers 10 32 42)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+(32 41 39 40 38 34 34 32 42 41)
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(defn random-numbers
+  ([n min max]
+   (take n (repeatedly #(random-number min max))))
+  ([n max]
+   (random-numbers n 0 max))
+  ([n]
+   (random-numbers n 0 1)))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-numbers 10)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+(0 1 0 1 0 1 0 0 0 1)
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-numbers 10 42)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+(31 21 42 12 12 9 3 23 26 18)
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(random-numbers 10 32 42)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+(35 39 41 35 34 39 37 33 42 37)
+
+```
+:::
+
+
+
+```{=html}
+<div style="background-color:grey;height:2px;width:100%;"></div>
+```
+
+
+
+```{=html}
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/random_number_generator.clj">notebooks/random_number_generator.clj</a></small></small></pre></div>
+```

@@ -23,6 +23,9 @@
 - [Sample and Population](sample_and_population.html)
 - [Element](element.html)
 
+## Random Number Generator
+- [Random Number Generator](random_number_generator.html)
+
 ## Central Tendencies
 - [Mean](mean.html)
 - [Median](median.html)
