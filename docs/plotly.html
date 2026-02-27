@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>plotly – Stats with Clojure</title>
+<title>5&nbsp; Scatter Plot – Stats with Clojure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,6 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./visualizations.html" rel="next">
+<link href="./start_with_clay.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -75,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ff63373b1067ca6f91cf1456aa1f00a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-99913b7803b80b0c1d2b970a25816663.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -116,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./plotly.html">Noj and other libraries</a></li><li class="breadcrumb-item"><a href="./plotly.html">Plotly</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./plotly.html">Noj and other libraries</a></li><li class="breadcrumb-item"><a href="./plotly.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Plotly</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -153,13 +155,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Index</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Index</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about_this_book.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About This Book</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About This Book</span></span></a>
   </div>
 </li>
       </ul>
@@ -176,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./setting_up_vscode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setting up VS Code</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Setting up VS Code</span></span></a>
   </div>
 </li>
       </ul>
@@ -193,7 +195,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./start_with_clay.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Start with Clay</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Start with Clay</span></span></a>
   </div>
 </li>
       </ul>
@@ -210,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./plotly.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Plotly</span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Plotly</span></span></a>
   </div>
 </li>
       </ul>
@@ -227,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./visualizations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Visualizations</span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizations</span></span></a>
   </div>
 </li>
       </ul>
@@ -244,19 +246,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./statistics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Statistics Overview</span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Statistics Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sample_and_population.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sample and Population</span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sample and Population</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./element.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Element</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Element</span></span></a>
   </div>
 </li>
       </ul>
@@ -273,7 +275,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./random_number_generator.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Random Number Generator</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Random Number Generator</span></span></a>
   </div>
 </li>
       </ul>
@@ -290,19 +292,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mean.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mean</span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mean</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./median.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Median</span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Median</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mode</span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Mode</span></span></a>
   </div>
 </li>
       </ul>
@@ -319,13 +321,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./stats_range.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Range</span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Range</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gini_coefficient.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gini Coefficient</span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Gini Coefficient</span></span></a>
   </div>
 </li>
       </ul>
@@ -342,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./analysis_of_chennai_rainfall.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chennai Rainfall Analysis</span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Chennai Rainfall Analysis</span></span></a>
   </div>
 </li>
       </ul>
@@ -354,43 +356,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link active" data-scroll-target="#scatter-plot"><span class="header-section-number">1</span> Scatter Plot</a>
+  <li><a href="#without-markers" id="toc-without-markers" class="nav-link active" data-scroll-target="#without-markers"><span class="header-section-number">5.1</span> Without markers</a></li>
+  <li><a href="#a-plot-without-any-configuration" id="toc-a-plot-without-any-configuration" class="nav-link" data-scroll-target="#a-plot-without-any-configuration"><span class="header-section-number">5.2</span> A plot without any configuration</a></li>
+  <li><a href="#bar-chart" id="toc-bar-chart" class="nav-link" data-scroll-target="#bar-chart"><span class="header-section-number">5.3</span> Bar Chart</a></li>
+  <li><a href="#customizing-the-plot" id="toc-customizing-the-plot" class="nav-link" data-scroll-target="#customizing-the-plot"><span class="header-section-number">6</span> Customizing the plot</a>
   <ul>
-  <li><a href="#without-markers" id="toc-without-markers" class="nav-link" data-scroll-target="#without-markers"><span class="header-section-number">1.1</span> Without markers</a></li>
-  <li><a href="#a-plot-without-any-configuration" id="toc-a-plot-without-any-configuration" class="nav-link" data-scroll-target="#a-plot-without-any-configuration"><span class="header-section-number">1.2</span> A plot without any configuration</a></li>
-  <li><a href="#bar-chart" id="toc-bar-chart" class="nav-link" data-scroll-target="#bar-chart"><span class="header-section-number">1.3</span> Bar Chart</a></li>
+  <li><a href="#specifying-color" id="toc-specifying-color" class="nav-link" data-scroll-target="#specifying-color"><span class="header-section-number">6.1</span> Specifying color</a></li>
+  <li><a href="#add-title" id="toc-add-title" class="nav-link" data-scroll-target="#add-title"><span class="header-section-number">6.2</span> Add title</a></li>
+  <li><a href="#x-and-y-labels" id="toc-x-and-y-labels" class="nav-link" data-scroll-target="#x-and-y-labels"><span class="header-section-number">6.3</span> x and y labels</a></li>
   </ul></li>
-  <li><a href="#customizing-the-plot" id="toc-customizing-the-plot" class="nav-link" data-scroll-target="#customizing-the-plot"><span class="header-section-number">2</span> Customizing the plot</a>
+  <li><a href="#mult-bar-chart" id="toc-mult-bar-chart" class="nav-link" data-scroll-target="#mult-bar-chart"><span class="header-section-number">7</span> Mult bar chart</a></li>
+  <li><a href="#stacked-bar-chart" id="toc-stacked-bar-chart" class="nav-link" data-scroll-target="#stacked-bar-chart"><span class="header-section-number">8</span> Stacked bar chart</a></li>
+  <li><a href="#horizontal-bar-chart" id="toc-horizontal-bar-chart" class="nav-link" data-scroll-target="#horizontal-bar-chart"><span class="header-section-number">9</span> Horizontal bar chart</a></li>
+  <li><a href="#line-charts-with-different-dash-styles" id="toc-line-charts-with-different-dash-styles" class="nav-link" data-scroll-target="#line-charts-with-different-dash-styles"><span class="header-section-number">10</span> Line charts with different dash styles</a></li>
+  <li><a href="#area-chart" id="toc-area-chart" class="nav-link" data-scroll-target="#area-chart"><span class="header-section-number">11</span> Area chart</a></li>
+  <li><a href="#stacked-area-chart" id="toc-stacked-area-chart" class="nav-link" data-scroll-target="#stacked-area-chart"><span class="header-section-number">12</span> Stacked area chart</a>
   <ul>
-  <li><a href="#specifying-color" id="toc-specifying-color" class="nav-link" data-scroll-target="#specifying-color"><span class="header-section-number">2.1</span> Specifying color</a></li>
-  <li><a href="#add-title" id="toc-add-title" class="nav-link" data-scroll-target="#add-title"><span class="header-section-number">2.2</span> Add title</a></li>
-  <li><a href="#x-and-y-labels" id="toc-x-and-y-labels" class="nav-link" data-scroll-target="#x-and-y-labels"><span class="header-section-number">2.3</span> x and y labels</a></li>
+  <li><a href="#stacked-area-chart-with-multiple-traces" id="toc-stacked-area-chart-with-multiple-traces" class="nav-link" data-scroll-target="#stacked-area-chart-with-multiple-traces"><span class="header-section-number">12.1</span> Stacked area chart with multiple traces</a></li>
   </ul></li>
-  <li><a href="#mult-bar-chart" id="toc-mult-bar-chart" class="nav-link" data-scroll-target="#mult-bar-chart"><span class="header-section-number">3</span> Mult bar chart</a></li>
-  <li><a href="#stacked-bar-chart" id="toc-stacked-bar-chart" class="nav-link" data-scroll-target="#stacked-bar-chart"><span class="header-section-number">4</span> Stacked bar chart</a></li>
-  <li><a href="#horizontal-bar-chart" id="toc-horizontal-bar-chart" class="nav-link" data-scroll-target="#horizontal-bar-chart"><span class="header-section-number">5</span> Horizontal bar chart</a></li>
-  <li><a href="#line-charts-with-different-dash-styles" id="toc-line-charts-with-different-dash-styles" class="nav-link" data-scroll-target="#line-charts-with-different-dash-styles"><span class="header-section-number">6</span> Line charts with different dash styles</a></li>
-  <li><a href="#area-chart" id="toc-area-chart" class="nav-link" data-scroll-target="#area-chart"><span class="header-section-number">7</span> Area chart</a></li>
-  <li><a href="#stacked-area-chart" id="toc-stacked-area-chart" class="nav-link" data-scroll-target="#stacked-area-chart"><span class="header-section-number">8</span> Stacked area chart</a>
-  <ul>
-  <li><a href="#stacked-area-chart-with-multiple-traces" id="toc-stacked-area-chart-with-multiple-traces" class="nav-link" data-scroll-target="#stacked-area-chart-with-multiple-traces"><span class="header-section-number">8.1</span> Stacked area chart with multiple traces</a></li>
-  </ul></li>
-  <li><a href="#scatter-plot-with-different-marker-colors" id="toc-scatter-plot-with-different-marker-colors" class="nav-link" data-scroll-target="#scatter-plot-with-different-marker-colors"><span class="header-section-number">9</span> Scatter plot with different marker colors</a></li>
-  <li><a href="#scatter-plot-with-different-marker-sizes" id="toc-scatter-plot-with-different-marker-sizes" class="nav-link" data-scroll-target="#scatter-plot-with-different-marker-sizes"><span class="header-section-number">10</span> Scatter plot with different marker sizes</a></li>
-  <li><a href="#scatter-plot-with-lines-and-markers" id="toc-scatter-plot-with-lines-and-markers" class="nav-link" data-scroll-target="#scatter-plot-with-lines-and-markers"><span class="header-section-number">11</span> Scatter plot with lines and markers</a></li>
-  <li><a href="#box-plot" id="toc-box-plot" class="nav-link" data-scroll-target="#box-plot"><span class="header-section-number">12</span> Box plot</a></li>
-  <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram"><span class="header-section-number">13</span> Histogram</a></li>
-  <li><a href="#heatmap" id="toc-heatmap" class="nav-link" data-scroll-target="#heatmap"><span class="header-section-number">14</span> Heatmap</a></li>
+  <li><a href="#scatter-plot-with-different-marker-colors" id="toc-scatter-plot-with-different-marker-colors" class="nav-link" data-scroll-target="#scatter-plot-with-different-marker-colors"><span class="header-section-number">13</span> Scatter plot with different marker colors</a></li>
+  <li><a href="#scatter-plot-with-different-marker-sizes" id="toc-scatter-plot-with-different-marker-sizes" class="nav-link" data-scroll-target="#scatter-plot-with-different-marker-sizes"><span class="header-section-number">14</span> Scatter plot with different marker sizes</a></li>
+  <li><a href="#scatter-plot-with-lines-and-markers" id="toc-scatter-plot-with-lines-and-markers" class="nav-link" data-scroll-target="#scatter-plot-with-lines-and-markers"><span class="header-section-number">15</span> Scatter plot with lines and markers</a></li>
+  <li><a href="#box-plot" id="toc-box-plot" class="nav-link" data-scroll-target="#box-plot"><span class="header-section-number">16</span> Box plot</a></li>
+  <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram"><span class="header-section-number">17</span> Histogram</a></li>
+  <li><a href="#heatmap" id="toc-heatmap" class="nav-link" data-scroll-target="#heatmap"><span class="header-section-number">18</span> Heatmap</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./plotly.html">Noj and other libraries</a></li><li class="breadcrumb-item"><a href="./plotly.html">Plotly</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./plotly.html">Noj and other libraries</a></li><li class="breadcrumb-item"><a href="./plotly.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Plotly</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Scatter Plot</span></h1>
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <style></style>
@@ -410,8 +425,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> plotly</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [scicloj.tableplot.v1.plotly <span class="at">:as</span> plotly]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="scatter-plot" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Scatter Plot</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -420,8 +433,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">:mode</span> <span class="st">"markers"</span>}]})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6],"type":"scatter","mode":"markers"}], {}, {});</script></div>
-<section id="without-markers" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="without-markers"><span class="header-section-number">1.1</span> Without markers</h2>
+<section id="without-markers" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="without-markers"><span class="header-section-number">5.1</span> Without markers</h2>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -430,8 +443,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6],"type":"scatter"}], {}, {});</script></div>
 </section>
-<section id="a-plot-without-any-configuration" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="a-plot-without-any-configuration"><span class="header-section-number">1.2</span> A plot without any configuration</h2>
+<section id="a-plot-without-any-configuration" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="a-plot-without-any-configuration"><span class="header-section-number">5.2</span> A plot without any configuration</h2>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -439,8 +452,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6]}], {}, {});</script></div>
 </section>
-<section id="bar-chart" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="bar-chart"><span class="header-section-number">1.3</span> Bar Chart</h2>
+<section id="bar-chart" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="bar-chart"><span class="header-section-number">5.3</span> Bar Chart</h2>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -457,11 +470,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"labels":["A","B","C"],"values":[10,20,30],"type":"pie"}], {}, {});</script></div>
 </section>
-</section>
-<section id="customizing-the-plot" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Customizing the plot</h1>
-<section id="specifying-color" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="specifying-color"><span class="header-section-number">2.1</span> Specifying color</h2>
+<section id="customizing-the-plot" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Customizing the plot</h1>
+<section id="specifying-color" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="specifying-color"><span class="header-section-number">6.1</span> Specifying color</h2>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -471,8 +483,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6],"type":"bar","marker":{"color":"red"}}], {}, {});</script></div>
 </section>
-<section id="add-title" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="add-title"><span class="header-section-number">2.2</span> Add title</h2>
+<section id="add-title" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="add-title"><span class="header-section-number">6.2</span> Add title</h2>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -483,8 +495,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6],"type":"bar","marker":{"color":"red"}}], {"title":"My Bar Chart"}, {});</script></div>
 </section>
-<section id="x-and-y-labels" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="x-and-y-labels"><span class="header-section-number">2.3</span> x and y labels</h2>
+<section id="x-and-y-labels" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="x-and-y-labels"><span class="header-section-number">6.3</span> x and y labels</h2>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -498,8 +510,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6],"type":"bar","marker":{"color":"red"}}], {"title":"My Bar Chart","xaxis":{"title":"X Axis"},"yaxis":{"title":"Y Axis"}}, {});</script></div>
 </section>
 </section>
-<section id="mult-bar-chart" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Mult bar chart</h1>
+<section id="mult-bar-chart" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Mult bar chart</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -530,8 +542,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6],"type":"bar"},{"x":[1,2,3],"y":[6,5,4],"type":"bar"}], {"title":"My Bar Chart","xaxis":{"title":"X Axis"},"yaxis":{"title":"Y Axis"}}, {});</script></div>
 </section>
-<section id="stacked-bar-chart" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Stacked bar chart</h1>
+<section id="stacked-bar-chart" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Stacked bar chart</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
@@ -549,8 +561,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[4,5,6],"type":"bar","marker":{"color":"red"}},{"x":[1,2,3],"y":[6,5,4],"type":"bar","marker":{"color":"blue"}}], {"title":"My Bar Chart","xaxis":{"title":"X Axis"},"yaxis":{"title":"Y Axis"},"barmode":"stack"}, {});</script></div>
 </section>
-<section id="horizontal-bar-chart" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Horizontal bar chart</h1>
+<section id="horizontal-bar-chart" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Horizontal bar chart</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">4</span> <span class="dv">5</span> <span class="dv">6</span>]</span>
@@ -564,8 +576,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[4,5,6],"y":[1,2,3],"type":"bar","orientation":"h","marker":{"color":"red"}}], {"title":"My Bar Chart","xaxis":{"title":"X Axis"},"yaxis":{"title":"Y Axis"}}, {});</script></div>
 </section>
-<section id="line-charts-with-different-dash-styles" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Line charts with different dash styles</h1>
+<section id="line-charts-with-different-dash-styles" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Line charts with different dash styles</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> trace1</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>] <span class="at">:y</span> [<span class="dv">6</span> <span class="dv">8</span> <span class="dv">7</span> <span class="dv">8</span> <span class="dv">6</span>]</span>
@@ -599,8 +611,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3,4,5],"y":[6,8,7,8,6],"mode":"lines","name":"dashdot","line":{"dash":"dashdot","width":4}},{"x":[1,2,3,4,5],"y":[11,13,12,13,11],"mode":"lines","name":"Solid","line":{"dash":"solid","width":4}},{"x":[1,2,3,4,5],"y":[16,18,17,18,16],"mode":"lines","name":"dot","line":{"dash":"dot","width":4}}], {"title":"Line Dash Styles","xaxis":{"range":[0.75,5.25],"autorange":false},"yaxis":{"range":[0,18.5],"autorange":false},"legend":{"y":0.5,"traceorder":"reversed","font":{"size":16}},"margin":{"t":50}}, {});</script></div>
 </section>
-<section id="area-chart" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Area chart</h1>
+<section id="area-chart" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Area chart</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
@@ -612,8 +624,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3,4,5],"y":[6,8,7,8,6],"mode":"lines","fill":"tozeroy","line":{"color":"blue","width":0.5}}], {"title":"Area Chart"}, {});</script></div>
 </section>
-<section id="stacked-area-chart" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Stacked area chart</h1>
+<section id="stacked-area-chart" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Stacked area chart</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
@@ -629,8 +641,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">:layout</span> {<span class="at">:title</span> <span class="st">"Stacked Area Chart"</span>}})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3,4,5],"y":[6,8,7,8,6],"mode":"lines","fill":"tonexty","line":{"color":"blue","width":0.5}},{"x":[1,2,3,4,5],"y":[11,13,12,13,11],"mode":"lines","fill":"tonexty","line":{"color":"red","width":0.5}}], {"title":"Stacked Area Chart"}, {});</script></div>
-<section id="stacked-area-chart-with-multiple-traces" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="stacked-area-chart-with-multiple-traces"><span class="header-section-number">8.1</span> Stacked area chart with multiple traces</h2>
+<section id="stacked-area-chart-with-multiple-traces" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="stacked-area-chart-with-multiple-traces"><span class="header-section-number">12.1</span> Stacked area chart with multiple traces</h2>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> traces</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>] <span class="at">:y</span> [<span class="dv">2</span> <span class="dv">1</span> <span class="dv">4</span>] <span class="at">:stackgroup</span> <span class="st">"one"</span>}</span>
@@ -646,8 +658,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3],"y":[2,1,4],"stackgroup":"one"},{"x":[1,2,3],"y":[1,1,2],"stackgroup":"one"},{"x":[1,2,3],"y":[3,0,2],"stackgroup":"one"}], {"title":"My Awesome Stacked Chart","margin":{"t":50,"l":50}}, {});</script></div>
 </section>
 </section>
-<section id="scatter-plot-with-different-marker-colors" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Scatter plot with different marker colors</h1>
+<section id="scatter-plot-with-different-marker-colors" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Scatter plot with different marker colors</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
@@ -659,8 +671,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3,4,5],"y":[6,8,7,8,6],"mode":"markers","marker":{"color":["red","green","blue","orange","purple"],"size":10}}], {"title":"Scatter Plot with Different Marker Colors"}, {});</script></div>
 </section>
-<section id="scatter-plot-with-different-marker-sizes" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Scatter plot with different marker sizes</h1>
+<section id="scatter-plot-with-different-marker-sizes" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Scatter plot with different marker sizes</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
@@ -671,8 +683,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3,4,5],"y":[6,8,7,8,6],"mode":"markers","marker":{"size":[10,20,30,40,50]}}], {"title":"Scatter Plot with Different Marker Sizes"}, {});</script></div>
 </section>
-<section id="scatter-plot-with-lines-and-markers" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Scatter plot with lines and markers</h1>
+<section id="scatter-plot-with-lines-and-markers" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Scatter plot with lines and markers</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
@@ -684,8 +696,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[1,2,3,4,5],"y":[6,8,7,8,6],"mode":"markers+lines","marker":{"color":"red","size":10},"line":{"color":"red","width":2}}], {"title":"Scatter Plot with Lines"}, {});</script></div>
 </section>
-<section id="box-plot" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Box plot</h1>
+<section id="box-plot" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Box plot</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:y</span> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span>]</span>
@@ -696,8 +708,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"y":[1,2,3,4,5],"type":"box"}], {"title":"Box Plot","xaxis":{"title":"X Axis"},"yaxis":{"title":"Y Axis"}}, {});</script></div>
 </section>
-<section id="histogram" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Histogram</h1>
+<section id="histogram" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> Histogram</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:x</span> [<span class="dv">6</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">3</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">4</span> <span class="dv">5</span> <span class="dv">5</span> <span class="dv">5</span> <span class="dv">5</span> <span class="dv">5</span> <span class="dv">6</span> <span class="dv">6</span> <span class="dv">7</span>]</span>
@@ -708,8 +720,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div style="height:auto;width:100%;"><script>Plotly.newPlot(document.currentScript.parentElement, [{"x":[6,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,7],"type":"histogram"}], {"title":"Histogram","xaxis":{"title":"X Axis"},"yaxis":{"title":"Y Axis"}}, {});</script></div>
 </section>
-<section id="heatmap" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Heatmap</h1>
+<section id="heatmap" class="level1" data-number="18">
+<h1 data-number="18"><span class="header-section-number">18</span> Heatmap</h1>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>(plotly/plot</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:data</span> [{<span class="at">:z</span> [[<span class="dv">1</span> <span class="dv">20</span> <span class="dv">30</span>]</span>
@@ -1142,6 +1154,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./start_with_clay.html" class="pagination-link" aria-label="Start with Clay">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Start with Clay</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./visualizations.html" class="pagination-link" aria-label="Visualizations">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizations</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

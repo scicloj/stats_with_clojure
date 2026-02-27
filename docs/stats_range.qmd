@@ -43,7 +43,7 @@ numbers
 
 ::: {.printedClojure}
 ```clojure
-(51 84 8 62 55 100 66 93 95 10)
+(14 30 49 29 14 68 42 16 43 20)
 
 ```
 :::
@@ -69,7 +69,7 @@ numbers
 
 ::: {.printedClojure}
 ```clojure
-92
+54
 
 ```
 :::

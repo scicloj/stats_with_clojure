@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>sample_and_population – Stats with Clojure</title>
+<title>8&nbsp; Sample and Population – Stats with Clojure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./element.html" rel="next">
+<link href="./statistics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -40,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ff63373b1067ca6f91cf1456aa1f00a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-99913b7803b80b0c1d2b970a25816663.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistics.html">Statistical Terms</a></li><li class="breadcrumb-item"><a href="./sample_and_population.html">Sample and Population</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistics.html">Statistical Terms</a></li><li class="breadcrumb-item"><a href="./sample_and_population.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sample and Population</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -118,13 +120,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Index</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Index</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about_this_book.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About This Book</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About This Book</span></span></a>
   </div>
 </li>
       </ul>
@@ -141,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./setting_up_vscode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Setting up VS Code</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Setting up VS Code</span></span></a>
   </div>
 </li>
       </ul>
@@ -158,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./start_with_clay.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Start with Clay</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Start with Clay</span></span></a>
   </div>
 </li>
       </ul>
@@ -175,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./plotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Plotly</span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Plotly</span></span></a>
   </div>
 </li>
       </ul>
@@ -192,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./visualizations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Visualizations</span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Visualizations</span></span></a>
   </div>
 </li>
       </ul>
@@ -209,19 +211,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./statistics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Statistics Overview</span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Statistics Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sample_and_population.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Sample and Population</span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sample and Population</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./element.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Element</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Element</span></span></a>
   </div>
 </li>
       </ul>
@@ -238,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./random_number_generator.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Random Number Generator</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Random Number Generator</span></span></a>
   </div>
 </li>
       </ul>
@@ -255,19 +257,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mean.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mean</span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mean</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./median.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Median</span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Median</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mode</span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Mode</span></span></a>
   </div>
 </li>
       </ul>
@@ -284,13 +286,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./stats_range.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Range</span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Range</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gini_coefficient.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gini Coefficient</span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Gini Coefficient</span></span></a>
   </div>
 </li>
       </ul>
@@ -307,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./analysis_of_chennai_rainfall.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chennai Rainfall Analysis</span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Chennai Rainfall Analysis</span></span></a>
   </div>
 </li>
       </ul>
@@ -319,21 +321,34 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sample-and-population" id="toc-sample-and-population" class="nav-link active" data-scroll-target="#sample-and-population"><span class="header-section-number">1</span> Sample and Population</a>
-  <ul>
-  <li><a href="#sampling-bias" id="toc-sampling-bias" class="nav-link" data-scroll-target="#sampling-bias"><span class="header-section-number">1.1</span> Sampling Bias</a></li>
-  <li><a href="#food-for-thought" id="toc-food-for-thought" class="nav-link" data-scroll-target="#food-for-thought"><span class="header-section-number">1.2</span> Food for Thought</a></li>
-  </ul></li>
+  <li><a href="#sampling-bias" id="toc-sampling-bias" class="nav-link active" data-scroll-target="#sampling-bias"><span class="header-section-number">8.1</span> Sampling Bias</a></li>
+  <li><a href="#food-for-thought" id="toc-food-for-thought" class="nav-link" data-scroll-target="#food-for-thought"><span class="header-section-number">8.2</span> Food for Thought</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistics.html">Statistical Terms</a></li><li class="breadcrumb-item"><a href="./sample_and_population.html">Sample and Population</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./statistics.html">Statistical Terms</a></li><li class="breadcrumb-item"><a href="./sample_and_population.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sample and Population</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sample and Population</span></h1>
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <style></style>
@@ -348,19 +363,17 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
-<section id="sample-and-population" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Sample and Population</h1>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Day_of_People%E2%80%99s_Unity_-_072.jpg/960px-Day_of_People%E2%80%99s_Unity_-_072.jpg" class="img-fluid"></p>
 <p>When you want to study a system—for example, a social issue—you cannot ask everyone every question. Doing so would require immense resources, and making participation mandatory would effectively mean forcing your will on the public, which is not ideal. Therefore, statisticians use sampling. From the entire population, they select a smaller group of people to survey. Some may choose to answer, while others may not.</p>
 <p>The subset of people who actually provide responses is called the <strong>sample</strong>, while the entire group of interest (e.g., all citizens of a nation) is called the <strong>population</strong>. Although the sample size is usually much smaller than the population, statisticians can still produce accurate predictions if the sample is representative.</p>
-<section id="sampling-bias" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="sampling-bias"><span class="header-section-number">1.1</span> Sampling Bias</h2>
+<section id="sampling-bias" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sampling-bias"><span class="header-section-number">8.1</span> Sampling Bias</h2>
 <p>Consider a scenario where you are surveying the lifestyle of people in India. If you only take samples from highly developed states like Tamil Nadu or Maharashtra, your results will be skewed and unrepresentative of the country as a whole. To get an accurate picture, sampling must be done in a way that includes people from all states and diverse backgrounds.</p>
 <p>Another type of bias can arise from population density. For instance, states like Arunachal Pradesh or Meghalaya have significantly fewer people than Bihar or Uttar Pradesh. If you collect samples without considering the population size, or if you disproportionately favor less populous states, your data can become skewed.</p>
 <p>Effective sampling requires prior knowledge of the system. With this knowledge, one must carefully design a sampling strategy to ensure the results accurately reflect the population.</p>
 </section>
-<section id="food-for-thought" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="food-for-thought"><span class="header-section-number">1.2</span> Food for Thought</h2>
+<section id="food-for-thought" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="food-for-thought"><span class="header-section-number">8.2</span> Food for Thought</h2>
 <ul>
 <li>If you were a statistician working for the Afghan government and were denied the opportunity to survey women, do you think you could reach accurate conclusions about the country’s state?</li>
 <li>If a survey is conducted exclusively via a mobile app, it might be used more by millennials than by older generations. In what ways would this data be skewed?</li>
@@ -371,7 +384,6 @@ ul.task-list li input[type="checkbox"] {
 <div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/sample_and_population.clj">notebooks/sample_and_population.clj</a></small></small></pre></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -775,6 +787,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./statistics.html" class="pagination-link" aria-label="Statistics Overview">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Statistics Overview</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./element.html" class="pagination-link" aria-label="Element">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Element</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

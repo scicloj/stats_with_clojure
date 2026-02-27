@@ -1,6 +1,5 @@
 ---
-format:
-  html: {toc: true, toc-depth: 4, theme: cosmo}
+format: {}
 toc: true
 toc-depth: 4
 number-sections: true
