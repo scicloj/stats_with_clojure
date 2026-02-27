@@ -1,4 +1,4 @@
 {:deps {org.scicloj/noj {:mvn/version "2-beta19.1"}}
- :paths ["notebooks"]
+ :paths ["notebooks" "lib"]
  :aliases {:build {:extra-paths ["scripts"]
                    :main-opts ["-m" "build"]}}}

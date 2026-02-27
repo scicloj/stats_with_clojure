@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Stats with Clojure</title>
+<title>stats_range – Stats with Clojure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="./index.html">Index</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./stats_range.html">Variability</a></li><li class="breadcrumb-item"><a href="./stats_range.html">Range</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -117,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Index</span></a>
   </div>
 </li>
@@ -283,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./stats_range.html" class="sidebar-item-text sidebar-link">
+  <a href="./stats_range.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Range</span></a>
   </div>
 </li>
@@ -317,29 +352,11 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#index" id="toc-index" class="nav-link active" data-scroll-target="#index"><span class="header-section-number">1</span> Index</a>
-  <ul>
-  <li><a href="#tooling" id="toc-tooling" class="nav-link" data-scroll-target="#tooling"><span class="header-section-number">1.1</span> Tooling</a></li>
-  <li><a href="#getting-your-feet-wet" id="toc-getting-your-feet-wet" class="nav-link" data-scroll-target="#getting-your-feet-wet"><span class="header-section-number">1.2</span> Getting your feet wet</a></li>
-  <li><a href="#noj-and-other-libraries" id="toc-noj-and-other-libraries" class="nav-link" data-scroll-target="#noj-and-other-libraries"><span class="header-section-number">1.3</span> Noj and other libraries</a></li>
-  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations"><span class="header-section-number">1.4</span> Visualizations</a></li>
-  <li><a href="#statistical-terms" id="toc-statistical-terms" class="nav-link" data-scroll-target="#statistical-terms"><span class="header-section-number">1.5</span> Statistical Terms</a></li>
-  <li><a href="#random-number-generator" id="toc-random-number-generator" class="nav-link" data-scroll-target="#random-number-generator"><span class="header-section-number">1.6</span> Random Number Generator</a></li>
-  <li><a href="#central-tendencies" id="toc-central-tendencies" class="nav-link" data-scroll-target="#central-tendencies"><span class="header-section-number">1.7</span> Central Tendencies</a></li>
-  <li><a href="#variability" id="toc-variability" class="nav-link" data-scroll-target="#variability"><span class="header-section-number">1.8</span> Variability</a></li>
-  <li><a href="#project" id="toc-project" class="nav-link" data-scroll-target="#project"><span class="header-section-number">1.9</span> Project</a></li>
-  <li><a href="#books-references" id="toc-books-references" class="nav-link" data-scroll-target="#books-references"><span class="header-section-number">1.10</span> Books &amp; References</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="./index.html">Index</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./stats_range.html">Variability</a></li><li class="breadcrumb-item"><a href="./stats_range.html">Range</a></li></ol></nav></header>
 
 
 
@@ -356,112 +373,33 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
-<div class="clay-image">
-<img class="clay-image" src="notebooks/images/stats_with_clojure.png" width="400">
+<div class="sourceClojure">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> stats-range</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [random <span class="at">:as</span> r]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="index" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Index</h1>
-<ul>
-<li><a href="about_this_book.html">About This Book</a></li>
-<li><a href="statistics.html">Statistics</a></li>
-</ul>
-<section id="tooling" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="tooling"><span class="header-section-number">1.1</span> Tooling</h2>
-<ul>
-<li><a href="setting_up_vscode.html">Setting up Visual Studio Code</a></li>
-</ul>
-</section>
-<section id="getting-your-feet-wet" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="getting-your-feet-wet"><span class="header-section-number">1.2</span> Getting your feet wet</h2>
-<ul>
-<li>Cloning Noj v2 Getting Started</li>
-<li><a href="start_with_clay.html">Start with Clay</a></li>
-<li><a href="getting_started_with_stats_with_clojure.html">Getting Started With Stats With Clojure</a></li>
-</ul>
-</section>
-<section id="noj-and-other-libraries" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="noj-and-other-libraries"><span class="header-section-number">1.3</span> Noj and other libraries</h2>
-<ul>
-<li>Noj</li>
-<li>Kindly</li>
-<li><a href="plotly.html">Plotly</a></li>
-<li>Tablecloth</li>
-</ul>
-</section>
-<section id="visualizations" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="visualizations"><span class="header-section-number">1.4</span> Visualizations</h2>
-<ul>
-<li><a href="visualizations.html">Visualizations</a></li>
-</ul>
-</section>
-<section id="statistical-terms" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="statistical-terms"><span class="header-section-number">1.5</span> Statistical Terms</h2>
-<ul>
-<li><a href="sample_and_population.html">Sample and Population</a></li>
-<li><a href="element.html">Element</a></li>
-</ul>
-</section>
-<section id="random-number-generator" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="random-number-generator"><span class="header-section-number">1.6</span> Random Number Generator</h2>
-<ul>
-<li><a href="random_number_generator.html">Random Number Generator</a></li>
-</ul>
-</section>
-<section id="central-tendencies" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="central-tendencies"><span class="header-section-number">1.7</span> Central Tendencies</h2>
-<ul>
-<li><a href="mean.html">Mean</a></li>
-<li><a href="median.html">Median</a></li>
-<li><a href="mode.html">Mode</a></li>
-</ul>
-</section>
-<section id="variability" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="variability"><span class="header-section-number">1.8</span> Variability</h2>
-<ul>
-<li><a href="stats_range.html">Range</a></li>
-<li>Variance</li>
-<li>Standard Deviation</li>
-<li>Interquartile Range</li>
-<li>Distribution</li>
-<li>Skewness</li>
-<li>Kurtosis</li>
-<li>Correlation</li>
-<li>Covariance</li>
-<li>Regression</li>
-<li><a href="gini_coefficient.html">Gini Coefficient</a></li>
-<li>Entropy</li>
-<li>Mutual Information</li>
-<li>Kullback-Leibler Divergence</li>
-<li>Jensen-Shannon Divergence</li>
-<li>Wasserstein Distance</li>
-<li>Earth Mover’s Distance</li>
-<li>Jaccard Similarity</li>
-<li>Cosine Similarity</li>
-<li>Pearson Correlation</li>
-<li>Spearman Correlation</li>
-<li>Kendall Correlation</li>
-</ul>
-</section>
-<section id="project" class="level2" data-number="1.9">
-<h2 data-number="1.9" class="anchored" data-anchor-id="project"><span class="header-section-number">1.9</span> Project</h2>
-<ul>
-<li><a href="analysis_of_chennai_rainfall.html">Analysis of Chennai Rainfall</a></li>
-</ul>
-</section>
-<section id="books-references" class="level2" data-number="1.10">
-<h2 data-number="1.10" class="anchored" data-anchor-id="books-references"><span class="header-section-number">1.10</span> Books &amp; References</h2>
-<ul>
-<li><a href="https://www.statlearning.com/">An Introduction to Statistical Learning</a></li>
-<li>Khan Academy Probability &amp; Statistics Course</li>
-<li><a href="https://www.inference.org.uk/itila/book.html">Information Theory, Inference, and Learning Algorithms</a></li>
-<li><a href="https://www.stat.cmu.edu/~brian/valerie/617-2022/0%20-%20books/2004%20-%20wasserman%20-%20all%20of%20statistics.pdf">All of Statistics</a></li>
-</ul>
+<div class="sourceClojure">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> numbers </span>(r/random-numbers <span class="dv">10</span> <span class="dv">1</span> <span class="dv">100</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="sourceClojure">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>numbers</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="printedClojure">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">51</span> <span class="dv">84</span> <span class="dv">8</span> <span class="dv">62</span> <span class="dv">55</span> <span class="dv">100</span> <span class="dv">66</span> <span class="dv">93</span> <span class="dv">95</span> <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="sourceClojure">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> stats-range </span>[numbers]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">-</span> (<span class="kw">apply</span> <span class="kw">max</span> numbers) (<span class="kw">apply</span> <span class="kw">min</span> numbers)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="sourceClojure">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(stats-range numbers)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="printedClojure">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">92</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <div style="background-color:grey;height:2px;width:100%;"></div>
-<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/index.clj">notebooks/index.clj</a></small></small></pre></div>
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/stats_range.clj">notebooks/stats_range.clj</a></small></small></pre></div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

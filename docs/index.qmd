@@ -1,6 +1,5 @@
 ---
-format:
-  html: {toc: true, toc-depth: 4, theme: cosmo}
+format: {}
 toc: true
 toc-depth: 4
 number-sections: true
@@ -59,7 +58,7 @@ theme: quarto
 - [Mode](mode.html)
    
 ## Variability
-- Range
+- [Range](stats_range.html)
 - Variance
 - Standard Deviation
 - Interquartile Range

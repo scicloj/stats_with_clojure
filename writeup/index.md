@@ -32,7 +32,7 @@
 - [Mode](mode.html)
    
 ## Variability
-- Range
+- [Range](stats_range.html)
 - Variance
 - Standard Deviation
 - Interquartile Range

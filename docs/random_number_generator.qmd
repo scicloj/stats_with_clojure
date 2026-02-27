@@ -1,6 +1,5 @@
 ---
-format:
-  html: {toc: true, toc-depth: 4, theme: cosmo}
+format: {}
 toc: true
 toc-depth: 4
 number-sections: true
@@ -27,7 +26,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-0.40513618553948627
+0.5514223384163949
 
 ```
 :::
@@ -44,7 +43,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-0
+1
 
 ```
 :::
@@ -61,7 +60,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-(1 7 4 9 7 4 5 8 3 1)
+(9 5 0 3 3 6 7 6 4 0)
 
 ```
 :::
@@ -104,7 +103,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-34
+42
 
 ```
 :::
@@ -121,7 +120,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-34
+38
 
 ```
 :::
@@ -138,7 +137,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-(38 38 41 36 41)
+(32 39 42 33 35)
 
 ```
 :::
@@ -169,7 +168,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-0
+5
 
 ```
 :::
@@ -186,7 +185,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-0
+1
 
 ```
 :::
@@ -203,7 +202,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-19
+15
 
 ```
 :::
@@ -229,7 +228,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-(32 41 39 40 38 34 34 32 42 41)
+(35 36 39 38 41 32 38 35 38 37)
 
 ```
 :::
@@ -260,7 +259,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-(0 1 0 1 0 1 0 0 0 1)
+(1 1 1 0 0 1 1 0 0 0)
 
 ```
 :::
@@ -277,7 +276,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-(31 21 42 12 12 9 3 23 26 18)
+(29 5 25 35 33 19 41 31 7 30)
 
 ```
 :::
@@ -294,7 +293,7 @@ theme: quarto
 
 ::: {.printedClojure}
 ```clojure
-(35 39 41 35 34 39 37 33 42 37)
+(35 42 35 34 38 37 32 38 39 33)
 
 ```
 :::

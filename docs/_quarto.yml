@@ -53,6 +53,8 @@ website:
             file: mode.qmd
       - section: "Variability"
         contents:
+          - text: "Range"
+            file: stats_range.qmd
           - text: "Gini Coefficient"
             file: gini_coefficient.qmd
       - section: "Project"

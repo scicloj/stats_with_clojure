@@ -1,0 +1,87 @@
+---
+format: {}
+toc: true
+toc-depth: 4
+number-sections: true
+theme: quarto
+
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+
+::: {.sourceClojure}
+```clojure
+(ns stats-range
+  (:require [random :as r]))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(def numbers (r/random-numbers 10 1 100))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+numbers
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+(51 84 8 62 55 100 66 93 95 10)
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(defn stats-range [numbers]
+  (- (apply max numbers) (apply min numbers)))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(stats-range numbers)
+```
+:::
+
+
+
+::: {.printedClojure}
+```clojure
+92
+
+```
+:::
+
+
+
+```{=html}
+<div style="background-color:grey;height:2px;width:100%;"></div>
+```
+
+
+
+```{=html}
+<div><pre><small><small>source: <a href="https://github.com/scicloj/stats_with_clojure/blob/main/notebooks/stats_range.clj">notebooks/stats_range.clj</a></small></small></pre></div>
+```
